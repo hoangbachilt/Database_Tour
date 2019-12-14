@@ -136,8 +136,8 @@ ActiveRecord::Schema.define(version: 2019_12_14_074820) do
     t.string "name"
     t.string "phone"
     t.string "address"
-    t.boolean "is_admin", default: false, null:false
-    t.integer "sign_in_count", default: 0, null: false
+    t.boolean "is_admin"
+    t.integer "sign_in_count"
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
