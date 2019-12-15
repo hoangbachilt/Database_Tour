@@ -12,8 +12,7 @@ class BookingsController < ApplicationController
   def create
     @booking = @tour.bookings.build booking_params
     @booking.user_id = current_user.id
-    if @booking.number_people.to_i >= @tour.min_people && @booking.number_people.to_i <= @tour.max_people
-      @booking.save
+    if @booking.save
       flash[:success] = t "app.booking.booking_success"
       redirect_to @tour
     else
