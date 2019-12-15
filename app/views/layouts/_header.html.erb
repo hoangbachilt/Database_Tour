@@ -8,7 +8,7 @@
         </li>
         <% if user_signed_in? %>
           <li><%= link_to t("profile"), edit_user_registration_path %></li>
-          <% if is_admin? %>
+          <% if current_user.is_admin? %>
             <li>
               <%= link_to "Admin",  admin_dasboard_index_path%>
             </li>
