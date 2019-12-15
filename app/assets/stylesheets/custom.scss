@@ -1,79 +1,102 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-body  {
-padding-top:  60px;
-}
-section {
-overflow: auto;
-}
-textarea  {
-resize: vertical;
-}
-.center{
-text-align: center;
-}
-.center h1  {
-margin-bottom:  10px;
-}
-/* kieu chu*/
-h1, h2, h3, h4, h5, h6  {
-line-height:  1;
-}
-h1  {
-font-size:  3em;
-letter-spacing: -2px;
-margin-bottom:  30px;
-text-align: center;
-}
-h2 {
-font-size:  1.2em;
-letter-spacing: -1px;
-margin-bottom:  30px;
-text-align: center;
-font-weight:  normal;
-color:  #777;
-}
-p {
-font-size:  1.1em;
-line-height:  1.7em;
-}
-/* logo*/
-#logo {
-float:  left;
-margin-right: 10px;
-font-size:  1.7em;
-color:  #fff;
-text-transform: uppercase;
-letter-spacing: -1px;
-padding-top:  9px;
-font-weight:  bold;
-}
-#logo:hover {
-color:  #fff;
-text-decoration:  none;
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
+
+body.app{
+  padding-top: 60px;
+  h1{
+    text-align: center;
+  }
 }
 
-/*  footer  */
-footer  {
-margin-top: 45px;
-padding-top:  5px;
-border-top: 1px solid #eaeaea;
-color:  #777;
+.style-icon {
+  width: 13px;
 }
-footer 
-a {
-color:  #555;
+
+.action {
+  width: 240px;
 }
-footer  a:hover {   color:  #222;
+
+.action_booking {
+  width: 168px;
 }
-footer  small {
-float:  left;
+
+.btn_booking {
+  width: 80px;
 }
-footer  ul  {
-float:  right;
-list-style: none;
+
+#input_search {
+  width: 354px;
 }
-footer  ul  li  {
-float:  left;
-margin-left:  15px;
+
+#icon_list {
+  color: $blue_icon;
 }
+
+.index_number {
+  width: 50px
+}
+
+.icon_add {
+  margin-right: 14px;
+}
+
+.table_color {
+  background: $black_title;
+  color: $white;
+}
+
+.pages_custom {
+  margin-right: 24px;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: $lightskyblue;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+
+  &:hover {
+    color: $blue_icon;
+    text-decoration: none;
+  }
+}
+
+.width_from {
+  width: 100px;
+}
+.width_local {
+  width: 111px;
+}
+
+.image_product {
+  width: 286px;
+  height: 229px;
+}
+
+.action_review {
+  width: 170px;
+}
+
+.logo {
+  color: $white;
+}
+
+#search_size {
+  margin-bottom: 6px;
+}
+
+#button-custom {
+  margin-top: 6px;
+}
+
+.button-full {
+  width: 100%;
+}
+
+.img-thumbnail{display:inline-block;max-width:100%;height:400px !important;padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+
